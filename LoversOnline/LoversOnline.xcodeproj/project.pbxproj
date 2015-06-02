@@ -14,6 +14,7 @@
 		33E953E11B1DA3F700763B92 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33E953E01B1DA3F700763B92 /* Images.xcassets */; };
 		33E953E41B1DA3F700763B92 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33E953E21B1DA3F700763B92 /* LaunchScreen.xib */; };
 		33E953F01B1DA3F700763B92 /* LoversOnlineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E953EF1B1DA3F700763B92 /* LoversOnlineTests.m */; };
+		33E953FE1B1DA58300763B92 /* MyPageControl.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E953FD1B1DA58300763B92 /* MyPageControl.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +41,8 @@
 		33E953E91B1DA3F700763B92 /* LoversOnlineTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LoversOnlineTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E953EE1B1DA3F700763B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33E953EF1B1DA3F700763B92 /* LoversOnlineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoversOnlineTests.m; sourceTree = "<group>"; };
+		33E953FC1B1DA58300763B92 /* MyPageControl.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyPageControl.h; sourceTree = "<group>"; };
+		33E953FD1B1DA58300763B92 /* MyPageControl.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyPageControl.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,8 +134,10 @@
 		33E953FB1B1DA43F00763B92 /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				33E953FC1B1DA58300763B92 /* MyPageControl.h */,
+				33E953FD1B1DA58300763B92 /* MyPageControl.m */,
 			);
-			name = Controller;
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -237,6 +242,7 @@
 			files = (
 				33E953DC1B1DA3F700763B92 /* ViewController.m in Sources */,
 				33E953D91B1DA3F700763B92 /* AppDelegate.m in Sources */,
+				33E953FE1B1DA58300763B92 /* MyPageControl.m in Sources */,
 				33E953D61B1DA3F700763B92 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
