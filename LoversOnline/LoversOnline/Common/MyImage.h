@@ -1,5 +1,5 @@
 //
-//  NewFeatureViewController.h
+//  MyImage.h
 //  LoversOnline
 //
 //  Created by 吴金林 on 15/6/2.
@@ -7,8 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "MyPageControl.h"
-#import "LoginViewController.h"
-@interface NewFeatureViewController : UIViewController
 
+@interface MyImage : UIImage
+-(UIImage *)TransformtoSize:(CGSize)Newsize;
 @end

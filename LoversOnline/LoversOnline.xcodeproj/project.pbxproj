@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		33495F491B1DDBC200646C4A /* MyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33495F481B1DDBC200646C4A /* MyImage.m */; };
+		336746B11B1DC2D300C90769 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336746AF1B1DC2D300C90769 /* LoginViewController.m */; };
+		336746B21B1DC2D300C90769 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 336746B01B1DC2D300C90769 /* LoginViewController.xib */; };
+		336746BA1B1DC7CF00C90769 /* testViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336746B91B1DC7CF00C90769 /* testViewController.m */; };
 		33E953D61B1DA3F700763B92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E953D51B1DA3F700763B92 /* main.m */; };
 		33E953D91B1DA3F700763B92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E953D81B1DA3F700763B92 /* AppDelegate.m */; };
 		33E953DC1B1DA3F700763B92 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E953DB1B1DA3F700763B92 /* ViewController.m */; };
@@ -29,6 +33,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		33495F471B1DDBC200646C4A /* MyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImage.h; sourceTree = "<group>"; };
+		33495F481B1DDBC200646C4A /* MyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImage.m; sourceTree = "<group>"; };
+		336746AE1B1DC2D300C90769 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		336746AF1B1DC2D300C90769 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		336746B01B1DC2D300C90769 /* LoginViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LoginViewController.xib; sourceTree = "<group>"; };
+		336746B81B1DC7CF00C90769 /* testViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = testViewController.h; sourceTree = "<group>"; };
+		336746B91B1DC7CF00C90769 /* testViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = testViewController.m; sourceTree = "<group>"; };
 		33E953D01B1DA3F700763B92 /* LoversOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoversOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		33E953D41B1DA3F700763B92 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		33E953D51B1DA3F700763B92 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -66,6 +77,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		33495F461B1DDB7700646C4A /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				33495F471B1DDBC200646C4A /* MyImage.h */,
+				33495F481B1DDBC200646C4A /* MyImage.m */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
 		33E953C71B1DA3F700763B92 = {
 			isa = PBXGroup;
 			children = (
@@ -87,6 +107,7 @@
 		33E953D21B1DA3F700763B92 /* LoversOnline */ = {
 			isa = PBXGroup;
 			children = (
+				33495F461B1DDB7700646C4A /* Common */,
 				33E954341B1DAF4C00763B92 /* Main */,
 				33E953F91B1DA40100763B92 /* Newfeature */,
 				33E953D71B1DA3F700763B92 /* AppDelegate.h */,
@@ -198,6 +219,11 @@
 		33E9543A1B1DB0D300763B92 /* LoginPage */ = {
 			isa = PBXGroup;
 			children = (
+				336746AE1B1DC2D300C90769 /* LoginViewController.h */,
+				336746AF1B1DC2D300C90769 /* LoginViewController.m */,
+				336746B01B1DC2D300C90769 /* LoginViewController.xib */,
+				336746B81B1DC7CF00C90769 /* testViewController.h */,
+				336746B91B1DC7CF00C90769 /* testViewController.m */,
 			);
 			path = LoginPage;
 			sourceTree = "<group>";
@@ -289,6 +315,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				336746B21B1DC2D300C90769 /* LoginViewController.xib in Resources */,
 				33E953DF1B1DA3F700763B92 /* Main.storyboard in Resources */,
 				33E953E41B1DA3F700763B92 /* LaunchScreen.xib in Resources */,
 				33E953E11B1DA3F700763B92 /* Images.xcassets in Resources */,
@@ -311,8 +338,11 @@
 			files = (
 				33E954011B1DA99300763B92 /* NewFeatureViewController.m in Sources */,
 				33E953DC1B1DA3F700763B92 /* ViewController.m in Sources */,
+				336746B11B1DC2D300C90769 /* LoginViewController.m in Sources */,
 				33E953D91B1DA3F700763B92 /* AppDelegate.m in Sources */,
 				33E953FE1B1DA58300763B92 /* MyPageControl.m in Sources */,
+				33495F491B1DDBC200646C4A /* MyImage.m in Sources */,
+				336746BA1B1DC7CF00C90769 /* testViewController.m in Sources */,
 				33E953D61B1DA3F700763B92 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -512,6 +542,7 @@
 				33E953F51B1DA3F700763B92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		33E953F61B1DA3F700763B92 /* Build configuration list for PBXNativeTarget "LoversOnlineTests" */ = {
 			isa = XCConfigurationList;
@@ -520,6 +551,7 @@
 				33E953F81B1DA3F700763B92 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

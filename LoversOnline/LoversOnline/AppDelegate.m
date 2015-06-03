@@ -8,7 +8,8 @@
 
 #import "AppDelegate.h"
 #import "NewFeatureViewController.h"
-#include "ViewController.h"
+#import "ViewController.h"
+#import "LoginViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -17,6 +18,7 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
+//    UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:[testViewController new]];
     //1.创建窗口
     self.window=[[UIWindow alloc]init];
     self.window.frame=[UIScreen mainScreen].bounds;
@@ -27,9 +29,11 @@
     // 当前软件的版本号（从Info.plist中获得）
     NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
     if ([currentVersion isEqualToString:lastVersion]) { // 版本号相同：这次打开和上次打开的是同一个版本
-        self.window.rootViewController = [[ViewController alloc] init];
+        //  self.window.rootViewController = [[ViewController alloc] init];
+        self.window.rootViewController=[LoginViewController new];
     } else { // 这次打开的版本和上一次不一样，显示新特性
-        self.window.rootViewController = [[NewFeatureViewController alloc] init];
+        UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:[NewFeatureViewController new]];
+        self.window.rootViewController = nav;
         
         // 将当前的版本号存进沙盒
         [[NSUserDefaults standardUserDefaults] setObject:currentVersion forKey:key];

@@ -7,6 +7,7 @@
 //
 
 #import "NewFeatureViewController.h"
+#import "testViewController.h"
 //获得当前屏幕宽高点数（非像素）
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
@@ -18,16 +19,19 @@
 @end
 
 @implementation NewFeatureViewController
-
+-(void)viewWillAppear:(BOOL)animated
+{
+    [self.navigationController setNavigationBarHidden:YES animated:YES];
+}
 - (void)viewDidLoad {
     [super viewDidLoad];
     //1.创建一个scrollview:显示所有的新特性图片
-    UIScrollView *scrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0, 0, kScreenWidth, kScreenHeight)];
+    UIScrollView *scrollView=[[UIScrollView alloc]initWithFrame:CGRectMake(0,-20, kScreenWidth, kScreenHeight+20)];
     [self.view addSubview:scrollView];
     self.scrollView=scrollView;
     //2.添加图片到scrollview中
     for (int i=0; i<NewfeatureCount; i++) {
-        UIImageView *imageView=[[UIImageView alloc]initWithFrame:CGRectMake(i*kScreenWidth, 0, kScreenWidth, kScreenHeight )];
+        UIImageView *imageView=[[UIImageView alloc]initWithFrame:CGRectMake(i*kScreenWidth, 0, kScreenWidth, kScreenHeight+20)];
         //显示图片
         imageView.image=[UIImage imageNamed:[NSString stringWithFormat:@"New_%i.png",i]];
         [scrollView addSubview:imageView];
@@ -82,7 +86,7 @@
     imageView.userInteractionEnabled = YES;
     //登陆按钮
     UIButton *loginBtn=[[UIButton alloc]init];
-    loginBtn.frame=CGRectMake(self.view.frame.origin.x+20, self.scrollView.frame.size.height-50, kScreenWidth*0.4, 40);
+    loginBtn.frame=CGRectMake(self.view.frame.origin.x+20, self.scrollView.frame.size.height-70, kScreenWidth*0.4, 40);
     [loginBtn setImage:[UIImage imageNamed:@"登录2.png"] forState:UIControlStateNormal];
     [loginBtn setImage:[UIImage imageNamed:@"登录3.png"] forState:UIControlStateHighlighted];
     [loginBtn addTarget:self action:@selector(login:) forControlEvents:UIControlEventTouchUpInside];
@@ -90,7 +94,7 @@
     
     //注册按钮
     UIButton *regitBtn=[[UIButton alloc]init];
-    regitBtn.frame=CGRectMake(kScreenWidth-(loginBtn.frame.size.width+loginBtn.frame.origin.x), self.scrollView.frame.size.height-50, kScreenWidth*0.4, 40);
+    regitBtn.frame=CGRectMake(kScreenWidth-(loginBtn.frame.size.width+loginBtn.frame.origin.x), self.scrollView.frame.size.height-70, kScreenWidth*0.4, 40);
     [regitBtn setImage:[UIImage imageNamed:@"注册2.png"] forState:UIControlStateNormal];
     [regitBtn setImage:[UIImage imageNamed:@"注册3.png"] forState:UIControlStateHighlighted];
     [regitBtn addTarget:self action:@selector(regit:) forControlEvents:UIControlEventTouchUpInside];
@@ -105,6 +109,8 @@
 -(void)login:(UIButton *)sender
 {
     NSLog(@"登陆");
+    LoginViewController *login=[[LoginViewController alloc]init];
+    [self.navigationController pushViewController:login animated:YES];
 }
 
 #pragma mark  注册
@@ -116,5 +122,7 @@
 -(void)regit:(UIButton *)sender
 {
     NSLog(@"注册");
+    testViewController *test=[testViewController new];
+    [self.navigationController pushViewController:test animated:YES];
 }
 @end
