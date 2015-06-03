@@ -10,6 +10,7 @@
 #import "NewFeatureViewController.h"
 #import "ViewController.h"
 #import "LoginViewController.h"
+#import "OAuthViewController.h"
 @interface AppDelegate ()
 
 @end
@@ -29,8 +30,12 @@
     // 当前软件的版本号（从Info.plist中获得）
     NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
     if ([currentVersion isEqualToString:lastVersion]) { // 版本号相同：这次打开和上次打开的是同一个版本
-        //  self.window.rootViewController = [[ViewController alloc] init];
-        self.window.rootViewController=[LoginViewController new];
+        //self.window.rootViewController = [[ViewController alloc] init];
+        //self.window.rootViewController=[LoginViewController new];
+        //self.window.rootViewController=[OAuthViewController new];
+        //设置故事板为第一启动
+        UIStoryboard *storyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.window.rootViewController=[storyBoard instantiateInitialViewController];
     } else { // 这次打开的版本和上一次不一样，显示新特性
         UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:[NewFeatureViewController new]];
         self.window.rootViewController = nav;
