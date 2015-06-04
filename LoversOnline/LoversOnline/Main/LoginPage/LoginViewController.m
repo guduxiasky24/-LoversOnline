@@ -9,11 +9,6 @@
 #import "LoginViewController.h"
 
 @interface LoginViewController ()
-@property (weak, nonatomic) IBOutlet UIView *emailLoginView;
-
-@property (weak, nonatomic) IBOutlet UIView *qqLoginView;
-
-@property (weak, nonatomic) IBOutlet UIView *sinaLoginView;
 @end
 
 @implementation LoginViewController
@@ -28,29 +23,29 @@
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    /*邮箱注册*/
-    //添加手势
-     UITapGestureRecognizer *tapGestureEmail=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(event:)];
-      [self.emailLoginView addGestureRecognizer:tapGestureEmail];
-    //设置viewtag值
-     self.emailLoginView.tag=100;
-    //设置圆角
-    [self.emailLoginView.layer setCornerRadius:5.0];
-    /*QQ注册*/
-    //添加手势
-    UITapGestureRecognizer *tapGestureQQ=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(event:)];
-    [self.qqLoginView addGestureRecognizer:tapGestureQQ];
-    //设置圆角
-    [self.qqLoginView.layer setCornerRadius:5.0];
-    //设置viewtag值
-    self.qqLoginView.tag=101;
-    /*新浪微博注册*/
-    UITapGestureRecognizer *tapGestureSina=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(event:)];
-    [self.sinaLoginView addGestureRecognizer:tapGestureSina];
-    //设置圆角
-    [self.sinaLoginView.layer setCornerRadius:5.0];
-    //设置viewtag值
-    self.sinaLoginView.tag=102;
+//    /*邮箱注册*/
+//    //添加手势
+//     UITapGestureRecognizer *tapGestureEmail=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(event:)];
+//      [self.emailLoginView addGestureRecognizer:tapGestureEmail];
+//    //设置viewtag值
+//     self.emailLoginView.tag=100;
+//    //设置圆角
+//    [self.emailLoginView.layer setCornerRadius:5.0];
+//    /*QQ注册*/
+//    //添加手势
+//    UITapGestureRecognizer *tapGestureQQ=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(event:)];
+//    [self.qqLoginView addGestureRecognizer:tapGestureQQ];
+//    //设置圆角
+//    [self.qqLoginView.layer setCornerRadius:5.0];
+//    //设置viewtag值
+//    self.qqLoginView.tag=101;
+//    /*新浪微博注册*/
+//    UITapGestureRecognizer *tapGestureSina=[[UITapGestureRecognizer alloc]initWithTarget:self action:@selector(event:)];
+//    [self.sinaLoginView addGestureRecognizer:tapGestureSina];
+//    //设置圆角
+//    [self.sinaLoginView.layer setCornerRadius:5.0];
+//    //设置viewtag值
+//    self.sinaLoginView.tag=102;
     
     /*导航控制器*/
     self.title=@"登录爱语";

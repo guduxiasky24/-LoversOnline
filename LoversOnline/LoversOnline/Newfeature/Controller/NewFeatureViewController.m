@@ -7,7 +7,8 @@
 //
 
 #import "NewFeatureViewController.h"
-#import "testViewController.h"
+#import "Regist1ViewController.h"
+#import "LoginViewController.h"
 //获得当前屏幕宽高点数（非像素）
 #define kScreenHeight [UIScreen mainScreen].bounds.size.height
 #define kScreenWidth  [UIScreen mainScreen].bounds.size.width
@@ -108,8 +109,9 @@
  */
 -(void)login:(UIButton *)sender
 {
-    NSLog(@"登陆");
-    LoginViewController *login=[[LoginViewController alloc]init];
+    //设置故事板为第一启动
+    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    LoginViewController *login=[storyboard instantiateViewControllerWithIdentifier:@"登录爱语Controller"];
     [self.navigationController pushViewController:login animated:YES];
 }
 
@@ -121,8 +123,9 @@
  */
 -(void)regit:(UIButton *)sender
 {
-    NSLog(@"注册");
-    testViewController *test=[testViewController new];
-    [self.navigationController pushViewController:test animated:YES];
+    //设置故事板为第一启动
+    UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+    Regist1ViewController *r1=[storyboard instantiateViewControllerWithIdentifier:@"注册爱语Controller"];
+    [self.navigationController pushViewController:r1 animated:YES];
 }
 @end
