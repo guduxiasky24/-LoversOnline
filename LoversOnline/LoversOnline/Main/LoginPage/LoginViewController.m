@@ -53,7 +53,7 @@
     [self.navigationController.navigationBar setTitleTextAttributes:@{NSFontAttributeName:[UIFont systemFontOfSize:19],NSForegroundColorAttributeName:[UIColor blackColor]}];
     //重写返回按钮
     UIButton *back=[UIButton buttonWithType:UIButtonTypeCustom];
-    [back setFrame:CGRectMake(5, 10, 25, 20 )];
+    [back setFrame:CGRectMake(5, 10, 20, 15 )];
     [back setBackgroundImage:[UIImage imageNamed:@"箭头.png"] forState:UIControlStateNormal];
     [back addTarget:self action:@selector(back:) forControlEvents:UIControlEventTouchUpInside];
     UIBarButtonItem *barButton=[[UIBarButtonItem alloc]initWithCustomView:back];

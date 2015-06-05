@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		33495F491B1DDBC200646C4A /* MyImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 33495F481B1DDBC200646C4A /* MyImage.m */; };
+		334DA93C1B2137360027CABF /* MatchingInfoController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334DA93B1B2137360027CABF /* MatchingInfoController.m */; };
+		334DA93F1B2137920027CABF /* MatchingWaitingController.m in Sources */ = {isa = PBXBuildFile; fileRef = 334DA93E1B2137920027CABF /* MatchingWaitingController.m */; };
+		334DA9421B2137A70027CABF /* MatchingWaiting2Controller.m in Sources */ = {isa = PBXBuildFile; fileRef = 334DA9411B2137A70027CABF /* MatchingWaiting2Controller.m */; };
 		33539DD51B1F0C5100008CAA /* Regist1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33539DD41B1F0C5100008CAA /* Regist1ViewController.m */; };
 		33539DD81B1F0CCA00008CAA /* Regist2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33539DD71B1F0CCA00008CAA /* Regist2ViewController.m */; };
 		33539E321B1F1C8600008CAA /* IQKeyboardManager.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 33539E1C1B1F1C8600008CAA /* IQKeyboardManager.bundle */; };
@@ -21,6 +24,7 @@
 		33539E3A1B1F1C8600008CAA /* UIView+IQKeyboardToolbar.m in Sources */ = {isa = PBXBuildFile; fileRef = 33539E2F1B1F1C8600008CAA /* UIView+IQKeyboardToolbar.m */; };
 		33539E3B1B1F1C8600008CAA /* UIWindow+Hierarchy.m in Sources */ = {isa = PBXBuildFile; fileRef = 33539E311B1F1C8600008CAA /* UIWindow+Hierarchy.m */; };
 		336746B11B1DC2D300C90769 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336746AF1B1DC2D300C90769 /* LoginViewController.m */; };
+		339191761B21968F00B21C1D /* BZGFormField.m in Sources */ = {isa = PBXBuildFile; fileRef = 339191751B21968F00B21C1D /* BZGFormField.m */; };
 		33AE4C061B1EB1A200154831 /* OAuthViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 33AE4C051B1EB1A200154831 /* OAuthViewController.m */; };
 		33E953D61B1DA3F700763B92 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E953D51B1DA3F700763B92 /* main.m */; };
 		33E953D91B1DA3F700763B92 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 33E953D81B1DA3F700763B92 /* AppDelegate.m */; };
@@ -46,6 +50,12 @@
 /* Begin PBXFileReference section */
 		33495F471B1DDBC200646C4A /* MyImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyImage.h; sourceTree = "<group>"; };
 		33495F481B1DDBC200646C4A /* MyImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyImage.m; sourceTree = "<group>"; };
+		334DA93A1B2137360027CABF /* MatchingInfoController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchingInfoController.h; sourceTree = "<group>"; };
+		334DA93B1B2137360027CABF /* MatchingInfoController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchingInfoController.m; sourceTree = "<group>"; };
+		334DA93D1B2137920027CABF /* MatchingWaitingController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchingWaitingController.h; sourceTree = "<group>"; };
+		334DA93E1B2137920027CABF /* MatchingWaitingController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchingWaitingController.m; sourceTree = "<group>"; };
+		334DA9401B2137A70027CABF /* MatchingWaiting2Controller.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchingWaiting2Controller.h; sourceTree = "<group>"; };
+		334DA9411B2137A70027CABF /* MatchingWaiting2Controller.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchingWaiting2Controller.m; sourceTree = "<group>"; };
 		33539DD31B1F0C5100008CAA /* Regist1ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Regist1ViewController.h; sourceTree = "<group>"; };
 		33539DD41B1F0C5100008CAA /* Regist1ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Regist1ViewController.m; sourceTree = "<group>"; };
 		33539DD61B1F0CCA00008CAA /* Regist2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Regist2ViewController.h; sourceTree = "<group>"; };
@@ -74,6 +84,8 @@
 		33539E311B1F1C8600008CAA /* UIWindow+Hierarchy.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIWindow+Hierarchy.m"; sourceTree = "<group>"; };
 		336746AE1B1DC2D300C90769 /* LoginViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
 		336746AF1B1DC2D300C90769 /* LoginViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		339191741B21968F00B21C1D /* BZGFormField.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BZGFormField.h; sourceTree = "<group>"; };
+		339191751B21968F00B21C1D /* BZGFormField.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BZGFormField.m; sourceTree = "<group>"; };
 		33AE4C041B1EB1A200154831 /* OAuthViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OAuthViewController.h; sourceTree = "<group>"; };
 		33AE4C051B1EB1A200154831 /* OAuthViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OAuthViewController.m; sourceTree = "<group>"; };
 		33E953D01B1DA3F700763B92 /* LoversOnline.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoversOnline.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -116,6 +128,8 @@
 		33495F461B1DDB7700646C4A /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				339191741B21968F00B21C1D /* BZGFormField.h */,
+				339191751B21968F00B21C1D /* BZGFormField.m */,
 				33495F471B1DDBC200646C4A /* MyImage.h */,
 				33495F481B1DDBC200646C4A /* MyImage.m */,
 			);
@@ -308,6 +322,12 @@
 				33539DD41B1F0C5100008CAA /* Regist1ViewController.m */,
 				33539DD61B1F0CCA00008CAA /* Regist2ViewController.h */,
 				33539DD71B1F0CCA00008CAA /* Regist2ViewController.m */,
+				334DA93A1B2137360027CABF /* MatchingInfoController.h */,
+				334DA93B1B2137360027CABF /* MatchingInfoController.m */,
+				334DA93D1B2137920027CABF /* MatchingWaitingController.h */,
+				334DA93E1B2137920027CABF /* MatchingWaitingController.m */,
+				334DA9401B2137A70027CABF /* MatchingWaiting2Controller.h */,
+				334DA9411B2137A70027CABF /* MatchingWaiting2Controller.m */,
 			);
 			path = RegistPage;
 			sourceTree = "<group>";
@@ -416,6 +436,8 @@
 				33539E331B1F1C8600008CAA /* IQKeyboardManager.m in Sources */,
 				33E954011B1DA99300763B92 /* NewFeatureViewController.m in Sources */,
 				33E953DC1B1DA3F700763B92 /* ViewController.m in Sources */,
+				339191761B21968F00B21C1D /* BZGFormField.m in Sources */,
+				334DA93F1B2137920027CABF /* MatchingWaitingController.m in Sources */,
 				33539E371B1F1C8600008CAA /* IQToolbar.m in Sources */,
 				336746B11B1DC2D300C90769 /* LoginViewController.m in Sources */,
 				33539E3A1B1F1C8600008CAA /* UIView+IQKeyboardToolbar.m in Sources */,
@@ -431,7 +453,9 @@
 				33539E381B1F1C8600008CAA /* NSArray+Sort.m in Sources */,
 				33495F491B1DDBC200646C4A /* MyImage.m in Sources */,
 				33E953D61B1DA3F700763B92 /* main.m in Sources */,
+				334DA93C1B2137360027CABF /* MatchingInfoController.m in Sources */,
 				33539E351B1F1C8600008CAA /* IQTextView.m in Sources */,
+				334DA9421B2137A70027CABF /* MatchingWaiting2Controller.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
