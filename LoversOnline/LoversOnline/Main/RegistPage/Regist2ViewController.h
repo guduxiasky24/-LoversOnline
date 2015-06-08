@@ -7,6 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "BZGFormField.h"
+#import "MatchingInfoController.h"
+#import "UserModel.h"
+#import "DbOperation.h"
 @interface Regist2ViewController : UIViewController
-
+@property (retain,nonatomic)UIAlertView *alert;
 @end

@@ -7,7 +7,14 @@
 //
 
 #import <UIKit/UIKit.h>
-
-@interface MatchingWaitingController : UIViewController
-
+#import <MessageUI/MessageUI.h>
+#import "FDAlertView.h"
+#import "ContentView.h"
+#import <AddressBookUI/AddressBookUI.h>
+#import <AddressBook/AddressBook.h>
+@interface MatchingWaitingController : UIViewController<MFMessageComposeViewControllerDelegate,UIAlertViewDelegate,ABPeoplePickerNavigationControllerDelegate,FDAlertViewDelegate>
+@property (weak, nonatomic) IBOutlet UILabel *codeLabel;
+@property (retain,nonatomic)UIAlertView *alert;
+@property (retain,nonatomic)UIView *phoneView;
+@property (retain,nonatomic)UITextField *phoneNumberInput;
 @end

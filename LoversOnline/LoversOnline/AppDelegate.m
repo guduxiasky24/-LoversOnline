@@ -30,11 +30,11 @@
     NSString *currentVersion = [NSBundle mainBundle].infoDictionary[key];
     if ([currentVersion isEqualToString:lastVersion]) { // 版本号相同：这次打开和上次打开的是同一个版本
         
-        UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:[NewFeatureViewController new]];
-        self.window.rootViewController = nav;
+//        UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:[NewFeatureViewController new]];
+//        self.window.rootViewController = nav;
         //设置故事板为第一启动
-//        UIStoryboard *storyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-//        self.window.rootViewController=[storyBoard instantiateInitialViewController];
+        UIStoryboard *storyBoard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+        self.window.rootViewController=[storyBoard instantiateInitialViewController];
     } else { // 这次打开的版本和上一次不一样，显示新特性
         UINavigationController *nav=[[UINavigationController alloc]initWithRootViewController:[NewFeatureViewController new]];
         self.window.rootViewController = nav;
