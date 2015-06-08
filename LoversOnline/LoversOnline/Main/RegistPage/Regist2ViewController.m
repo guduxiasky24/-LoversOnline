@@ -142,16 +142,25 @@
         userList.userPassword=self.passWordTextField.textField.text;
         userList.userSex=self.sex;
         userList.userHead=@"路径";
-        if([db insertUserList:userList])
-        {
-            NSLog(@"插入数据成功!");
-            //设置故事板为第一启动
-            UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
-            MatchingInfoController *matchingInfo=[storyboard instantiateViewControllerWithIdentifier:@"匹配信息Controller"];
-            [self.navigationController pushViewController:matchingInfo animated:YES];
+        NSString *Name=self.userNameTextField.textField.text;
+        NSString *username=[db selectUserName:Name];
+        NSLog(@"%@",username);
+        if (username==nil) {
+            if([db insertUserList:userList])
+            {
+                NSLog(@"插入数据成功!");
+                //设置故事板为第一启动
+                UIStoryboard *storyboard=[UIStoryboard storyboardWithName:@"Main" bundle:nil];
+                MatchingInfoController *matchingInfo=[storyboard instantiateViewControllerWithIdentifier:@"匹配信息Controller"];
+                [self.navigationController pushViewController:matchingInfo animated:YES];
+            }else{
+                NSLog(@"插入数据失败!");
+            }
         }else
         {
-            NSLog(@"插入数据失败!");
+            NSLog(@"用户名存在");
+            UIAlertView *alert=[[UIAlertView alloc]initWithTitle:@"提示" message:@"该用户名已经被使用" delegate:self cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            [alert show];
         }
     }
     
